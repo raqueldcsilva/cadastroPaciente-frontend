@@ -1,1 +1,166 @@
-<p>cadastrar works!</p>
+<div class="container-fluid">
+
+  <div class="row bg-color pt-5 d-flex align-items-center">
+    <div class="col-md-6">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 text-white">
+          <h1 class="fs-54">Sistema de Controle de Pacientes</h1>
+          <h4>Cadastre aqui informações sobre os pacientes</h4>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-3 mb-5">
+        <div class="col-md-6">
+          <button class="btn btn-light mr-5" data-bs-toggle="modal" data-bs-target="#novoPaciente"> <i class="fa fa-plus" aria-hidden="true"></i> Novo Paciente</button>
+          <a class="btn btn-light" href="#pacientes">Cadastros</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 justify-content-center">
+      <img src="https://i.imgur.com/6NJMP0Z.png" alt="Médica segurando uma prancheta" width="500px" height="500px">
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container mb-5 mt-5" id="pacientes">
+
+  <nav>
+    <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+      <button class="nav-link active text-secondary font-weight-bold" id="nav-todosPacientes-tab" data-bs-toggle="tab" data-bs-target="#todosPacientes" type="button" role="tab" aria-controls="nav-todosPacientes" aria-selected="true">Pacientes Cadastrados</button>
+
+      <button class="nav-link text-secondary font-weight-bold" id="nav-todosConvenios-tab" data-bs-toggle="tab" data-bs-target="#todosConvenios" type="button" role="tab" aria-controls="nav-todosConvenios" aria-selected="false">Convênios Cadastrados</button>
+
+    </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+
+    <div class="tab-pane fade show active" id="todosPacientes" role="tabpanel" aria-labelledby="nav-todosPacientes-tab">
+      Todos os Pacientes
+    </div>
+
+    <div class="tab-pane fade" id="todosConvenios" role="tabpanel" aria-labelledby="nav-todosConvenios-tab">
+      Todos os Convênios
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- Modal de Novo Paciente -->
+<div class="modal fade" id="novoPaciente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Novo Paciente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Número do Prontuário -->
+        <div class="form-group mt-2">
+          <label for="numeroProntuario">Nº do Prontuário</label>
+          <input type="number" class="form-control" id="numeroProntuario" placeholder="Digite apenas os números do Prontuário">
+        </div>
+
+        <!-- nome do paciente -->
+        <div class="form-group mt-2">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite o primeiro nome do paciente">
+        </div>
+
+
+        <!-- sobrenome do paciente -->
+        <div class="form-group mt-2">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome do paciente">
+        </div>
+
+
+        <!-- data de nascimento do paciente -->
+        <div class="form-group mt-2">
+          <label for="dataNasc">Data de Nascimento</label>
+          <input class="form-control" type="date" name="dataNasc" id="dataNasc">
+        </div>
+
+
+        <!-- CPF e RG do paciente -->
+        <div class="form-group mt-2">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="cpf">CPF</label>
+              <input type="number" class="form-control" id="cpf" placeholder="Digite os números do CPF">
+            </div>
+
+            <div class="col-md-6">
+              <label for="rg">RG</label>
+              <input type="text" class="form-control" id="rg" placeholder="Digite os números e letras">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- genêro do paciente -->
+        <div class="form-group mt-2">
+          <label for="genero">Genêro</label>
+          <select class="form-control" id="genero">
+              <option>Selecione o genêro:</option>
+              <option value="fem">Feminino</option>
+              <option value="masc">Masculino</option>
+              <option value="outros">Outros</option>
+          </select>
+        </div>
+
+
+        <!-- email do paciente -->
+        <div class="form-group mt-2">
+          <label for="email">Digite o e-mail do paciente</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+
+        <!-- telefone e celular -->
+        <div class="form-group mt-2">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="telefone">Telefone</label>
+              <input type="number" class="form-control" id="telefone" placeholder="Telefone do paciente">
+            </div>
+            <div class="col-md-6">
+              <label for="celular">Celular</label>
+              <input type="number" class="form-control" id="celular" placeholder="Celular do paciente">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Consumo da tabela de convênios -->
+        <div class="form-group mt-2">
+          <label for="convenio">Escolha um Convênio ou <a href="">cadastre um novo</a>:</label>
+          <select class="form-control" id="convenioo">
+            <option value="">convenios</option>
+          </select>
+        </div>
+
+
+      </div>
+
+      <!-- botões -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Cadastrar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
