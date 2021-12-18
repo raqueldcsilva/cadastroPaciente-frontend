@@ -12,7 +12,7 @@
 
       <div class="row d-flex justify-content-center mt-3 mb-5">
         <div class="col-md-6">
-          <button class="btn btn-light mr-5" data-bs-toggle="modal" data-bs-target="#novoPaciente"> <i class="fa fa-plus" aria-hidden="true"></i> Novo Paciente</button>
+          <button class="btn btn-light mr-5" routerLink='/form-cadastro' data-bs-target="#novoPaciente"> <i class="fa fa-plus" aria-hidden="true"></i> Novo Paciente</button>
           <a class="btn btn-light" href="#pacientes">Cadastros</a>
         </div>
       </div>
@@ -57,8 +57,8 @@
 
 
 
-<!-- Modal de Novo Paciente -->
-<div class="modal fade" id="novoPaciente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+<!-- <div class="modal fade" id="novoPaciente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -67,34 +67,33 @@
       </div>
       <div class="modal-body">
 
-        <!-- Número do Prontuário -->
+
         <div class="form-group mt-2">
           <label for="numeroProntuario">Nº do Prontuário</label>
           <input type="number" class="form-control" id="numeroProntuario" placeholder="Digite apenas os números do Prontuário">
         </div>
 
-        <!-- nome do paciente -->
+
         <div class="form-group mt-2">
           <label for="nome">Nome</label>
           <input type="text" class="form-control" id="nome" placeholder="Digite o primeiro nome do paciente">
         </div>
 
 
-        <!-- sobrenome do paciente -->
+
         <div class="form-group mt-2">
           <label for="sobrenome">Sobrenome</label>
           <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome do paciente">
         </div>
 
 
-        <!-- data de nascimento do paciente -->
+
         <div class="form-group mt-2">
           <label for="dataNasc">Data de Nascimento</label>
           <input class="form-control" type="date" name="dataNasc" id="dataNasc">
         </div>
 
 
-        <!-- CPF e RG do paciente -->
         <div class="form-group mt-2">
           <div class="row">
             <div class="col-md-6">
@@ -110,7 +109,6 @@
         </div>
 
 
-        <!-- genêro do paciente -->
         <div class="form-group mt-2">
           <label for="genero">Genêro</label>
           <select class="form-control" id="genero">
@@ -122,14 +120,14 @@
         </div>
 
 
-        <!-- email do paciente -->
+
         <div class="form-group mt-2">
           <label for="email">Digite o e-mail do paciente</label>
           <input type="email" class="form-control" id="email" name="email">
         </div>
 
 
-        <!-- telefone e celular -->
+
         <div class="form-group mt-2">
           <div class="row">
             <div class="col-md-6">
@@ -144,10 +142,10 @@
         </div>
 
 
-        <!-- Consumo da tabela de convênios -->
-        <div class="form-group mt-2">
-          <label for="convenio">Escolha um Convênio ou <a href="">cadastre um novo</a>:</label>
-          <select class="form-control" id="convenioo">
+
+        <div class="form-group">
+          <label for="convenio">Escolha um Convênio ou <a data-bs-dismiss="modal" routerLink='/convenio'>cadastre um novo</a>: </label>
+          <select class="form-control" id="convenio">
             <option value="">convenios</option>
           </select>
         </div>
@@ -155,12 +153,11 @@
 
       </div>
 
-      <!-- botões -->
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
         <button type="button" class="btn btn-success">Cadastrar</button>
       </div>
-      
+
     </div>
   </div>
-</div>
+</div> -->

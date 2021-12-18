@@ -1,0 +1,109 @@
+<div class="container-fluid d-flex justify-content-center">
+  <div class="row">
+    <h1 class="text-secondary mt-3">Cadastre um Novo Paciente</h1>
+  </div>
+</div>
+
+<div class="container mt-3 d-flex justify-content-center">
+  <div class="row">
+    <div class="col-md-12">
+
+
+      <!-- Número do Prontuário -->
+      <div class="form-group mt-2">
+        <label for="numeroProntuario">Nº do Prontuário</label>
+        <input type="number" class="form-control" id="numeroProntuario" placeholder="Digite apenas os números do Prontuário"/>
+      </div>
+
+      <!-- nome do paciente -->
+      <div class="form-group mt-2">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control"
+          id="nome" placeholder="Digite o primeiro nome do paciente"/>
+      </div>
+
+      <!-- sobrenome do paciente -->
+      <div class="form-group mt-2">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome do paciente"/>
+      </div>
+
+      <!-- data de nascimento do paciente -->
+      <div class="form-group mt-2">
+        <label for="dataNasc">Data de Nascimento</label>
+        <input class="form-control" type="date" name="dataNasc" id="dataNasc" />
+      </div>
+
+      <!-- CPF e RG do paciente -->
+      <div class="form-group mt-2">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="cpf">CPF</label>
+            <input type="number" class="form-control" id="cpf" placeholder="Digite os números do CPF"/>
+          </div>
+
+          <div class="col-md-6">
+            <label for="rg">RG</label>
+            <input type="text" class="form-control" id="rg" placeholder="Digite os números e letras"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- genêro do paciente -->
+      <div class="form-group mt-2">
+        <label for="genero">Genêro</label>
+        <select class="form-control" id="genero">
+          <option>Selecione o genêro:</option>
+          <option value="fem">Feminino</option>
+          <option value="masc">Masculino</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <!-- email do paciente -->
+      <div class="form-group mt-2">
+        <label for="email">Digite o e-mail do paciente</label>
+        <input type="email" class="form-control" id="email" name="email" />
+      </div>
+
+      <!-- telefone e celular -->
+      <div class="form-group mt-2">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="telefone">Telefone</label>
+            <input
+              type="number"
+              class="form-control"
+              id="telefone"
+              placeholder="Telefone do paciente"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="celular">Celular</label>
+            <input type="number" class="form-control" id="celular" placeholder="Celular do paciente"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consumo da tabela de convênios -->
+      <div class="form-group">
+        <label for="convenio"
+          >Escolha um Convênio ou
+          <a routerLink="/convenio">cadastre um novo</a>:
+        </label>
+        <select class="form-control" id="convenio">
+          <option value="">convenios</option>
+        </select>
+      </div>
+
+      <!-- botões -->
+      <div class="mt-5 d-flex align-items-end">
+        <button type="button" class="btn btn-danger mbtn" routerLink="/cadastrar">
+          Cancelar
+        </button>
+        <button type="button" class="btn btn-success mbtn">Cadastrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>

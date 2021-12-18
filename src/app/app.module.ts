@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { ConvenioComponent } from './convenio/convenio.component';
+import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    ConvenioComponent,
+    FormCadastroComponent
   ],
   imports: [
     BrowserModule,
