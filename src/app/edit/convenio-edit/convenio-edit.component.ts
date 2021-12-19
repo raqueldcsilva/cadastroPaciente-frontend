@@ -18,7 +18,7 @@ export class ConvenioEditComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
 
     let id = this.route.snapshot.params['id']
     this.findByIdConvenio(id)

@@ -12,6 +12,7 @@ import { ConvenioComponent } from './convenio/convenio.component';
 import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { ConvenioEditComponent } from './edit/convenio-edit/convenio-edit.component';
+import { PacienteEditComponent } from './edit/paciente-edit/paciente-edit.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ConvenioEditComponent } from './edit/convenio-edit/convenio-edit.compon
     CadastrarComponent,
     ConvenioComponent,
     FormCadastroComponent,
-    ConvenioEditComponent
+    ConvenioEditComponent,
+    PacienteEditComponent
   ],
   imports: [
     BrowserModule,
