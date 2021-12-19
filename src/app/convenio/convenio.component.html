@@ -50,7 +50,7 @@
             <th>{{convenio.id}}</th>
             <td>{{convenio.nome}}</td>
             <td>
-              <button class="btn btn-info">Editar</button>
+              <button class="btn btn-info" [routerLink]="['/convenio-edit', convenio.id]">Editar</button>
             </td>
           </tr>
         </tbody>

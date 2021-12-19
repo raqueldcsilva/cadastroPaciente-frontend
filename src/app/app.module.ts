@@ -11,6 +11,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ConvenioComponent } from './convenio/convenio.component';
 import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
 import { FormsModule } from '@angular/forms';
+import { ConvenioEditComponent } from './edit/convenio-edit/convenio-edit.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     CadastrarComponent,
     ConvenioComponent,
-    FormCadastroComponent
+    FormCadastroComponent,
+    ConvenioEditComponent
   ],
   imports: [
     BrowserModule,
