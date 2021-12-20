@@ -1,27 +1,71 @@
-# CadastroPaciente
+<div>
+    <p align="center">
+        <em>
+            <br><br>
+        </em>
+    <a href="https://www.linkedin.com/in/raquel-da-concei%C3%A7%C3%A3o-silva-ab0285189/" target="_blank">
+        <img src="https://img.shields.io/static/v1?label=Author&message=Raquel&color=00ba6d&style=for-the-badge&logo=LinkedIn" alt="Author: Raquel Silva">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
+    </a>
+    <a  href="#">
+      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular">
+    </a>
+    <a href="#">
+      <img  src="https://img.shields.io/static/v1?label=Language&message=Bootstrap&color=563d7c&style=for-the-badge&logo=Bootstrap"  alt="Language: Bootstrap">
+    </a>
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## 📌Sobre
 
-## Development server
+<div>
+    <p align="center">
+        Cadastro de paciente que usuário deve conseguir cadastrar um novo paciente e editar um paciente existente mas não deve ser possível excluir um cadastro.
+    </p>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+**Você deve ter instalado os seguintes softwares:**
+- [Node.js](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
+- [Angular](https://angular.io/guide/setup-local)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Recomendações**
+-   Tenha o Google Chrome ou Edge instalado
+-   Use o Visual Studio Code - VSCode
 
-## Build
+  ---
+### 1. Clone este repositório
+```
+git clone https://github.com/raqueldcsilva/cadastroPaciente-frontend.git
+```
+---
+### 2. instale todas as dependências
+```
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*Garanta que a internet esteja estável* 
 
-## Running unit tests
+### 3. Coloque o projeto para rodar
+```
+ng serve
+```
+### 4. Agora, abra seu browser e navegador: http://localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🌐Tecnologias
 
-## Running end-to-end tests
+- [AngularJS](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##
+### Veja Algumas imagens do programa:
+- Home
+<img src="https://i.imgur.com/699YRuw.png">
 
-## Further help
+- Pacientes Cadastrados 
+<img src="https://i.imgur.com/tIi7phn.png">
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Formulário de Cadastro
+<img src="https://i.imgur.com/nyg1b7T.png">
