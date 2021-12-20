@@ -1,6 +1,6 @@
 <div class="container-fluid d-flex justify-content-center">
   <div class="row">
-    <h1 class="text-secondary mt-3">Cadastre um Novo Paciente</h1>
+    <h1 class="text-secondary mt-3">Cadastre os novos pacientes</h1>
   </div>
 </div>
 
@@ -91,17 +91,17 @@
           >Escolha um Convênio ou
           <a routerLink='/convenio'>cadastre um novo</a>:
         </label>
-        <select class="form-control" id="convenio" [(ngModel)]='convenio.id' (change)='findByIdConvenio()'>
+        <select class="form-control" id="convenio" [(ngModel)]='idConvenio' (change)='findByIdConvenio()'>
           <option *ngFor='let convenio of listaConvenios' value="{{convenio.id}}">{{convenio.nome}}</option>
         </select>
       </div>
 
       <!-- botões -->
-      <div class="mt-5 d-flex justify-content-end">
-        <button type="button" class="btn btn-danger mbtn" routerLink='/cadastrar'>
+      <div class="mt-5 d-flex justify-content-end mb-5">
+        <button type="button" class="btn btn-danger mr" routerLink='/cadastrar'>
           Cancelar
         </button>
-        <button type="button" class="btn btn-success mbtn" (click)='cadastrar()'>Cadastrar</button>
+        <button type="button" class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
       </div>
 
     </div>

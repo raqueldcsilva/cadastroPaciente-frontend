@@ -52,8 +52,8 @@ export class FormCadastroComponent implements OnInit {
   }
 
   cadastrar(){
-    //this.convenio.id = this.idConvenio
-    //this.paciente.convenio = this.convenio
+    this.convenio.id = this.idConvenio
+    this.paciente.convenio = this.convenio
 
     this.pacienteService.postPaciente(this.paciente).subscribe((resp: Paciente) => {
       this.paciente = resp
