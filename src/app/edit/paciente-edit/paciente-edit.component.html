@@ -12,20 +12,20 @@
       <!-- Número do Prontuário -->
       <div class="form-group mt-2">
         <label for="numeroProntuario">Nº do Prontuário</label>
-        <input [(ngModel)]='paciente.numeroProntuario'type="number" class="form-control" id="numeroProntuario" placeholder="Digite apenas os números do Prontuário"/>
+        <input [(ngModel)]='paciente.numeroProntuario'type="number" class="form-control" id="numeroProntuario"/>
       </div>
 
       <!-- nome do paciente -->
       <div class="form-group mt-2">
         <label for="nome">Nome</label>
         <input [(ngModel)]='paciente.nome' type="text" class="form-control"
-          id="nome" placeholder="Digite o primeiro nome do paciente"/>
+          id="nome"/>
       </div>
 
       <!-- sobrenome do paciente -->
       <div class="form-group mt-2">
         <label for="sobrenome">Sobrenome</label>
-        <input [(ngModel)]='paciente.sobrenome' type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome do paciente"/>
+        <input [(ngModel)]='paciente.sobrenome' type="text" class="form-control" id="sobrenome" />
       </div>
 
       <!-- data de nascimento do paciente -->
@@ -44,7 +44,7 @@
 
           <div class="col-md-6">
             <label for="rg">RG</label>
-            <input [(ngModel)]='paciente.rg'type="text" class="form-control" id="rg" placeholder="Digite os números e letras"/>
+            <input [(ngModel)]='paciente.rg'type="text" class="form-control" id="rg" />
           </div>
         </div>
       </div>
@@ -75,12 +75,11 @@
               type="number"
               class="form-control"
               id="telefone"
-              placeholder="Telefone do paciente"
-            />
+              />
           </div>
           <div class="col-md-6">
             <label for="celular">Celular</label>
-            <input [(ngModel)]='paciente.celular' type="number" class="form-control" id="celular" placeholder="Celular do paciente"/>
+            <input [(ngModel)]='paciente.celular' type="number" class="form-control" id="celular"/>
           </div>
         </div>
       </div>
@@ -99,9 +98,9 @@
       <!-- botões -->
       <div class="mt-5 d-flex justify-content-end">
         <button type="button" class="btn btn-danger mbtn" routerLink='/cadastrar'>
-          Cancelar
+          Voltar/Cancelar
         </button>
-        <button type="button" class="btn btn-success mbtn" (click)='atualizar()'>Cadastrar</button>
+        <button type="button" class="btn btn-success mbtn" (click)='atualizar()'>Atualizar</button>
       </div>
 
     </div>
