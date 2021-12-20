@@ -91,7 +91,7 @@
           >Escolha um Convênio ou
           <a routerLink='/convenio'>cadastre um novo</a>:
         </label>
-        <select class="form-control" id="convenio" [(ngModel)]='idConvenio' (change)='findByIdConvenio()'>
+        <select class="form-control" id="convenio" [(ngModel)]='convenio.id' (change)='findByIdConvenio()'>
           <option *ngFor='let convenio of listaConvenios' value="{{convenio.id}}">{{convenio.nome}}</option>
         </select>
       </div>
