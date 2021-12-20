@@ -56,7 +56,7 @@ ng serve
 
 ## 🌐Tecnologias
 
-- [AngularJS](https://angular.io/)
+- [Angular](https://angular.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ##
