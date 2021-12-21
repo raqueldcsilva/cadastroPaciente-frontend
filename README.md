@@ -62,10 +62,19 @@ ng serve
 ##
 ### Veja Algumas imagens do programa:
 - Home
-<img src="https://i.imgur.com/699YRuw.png">
+<img src="https://i.imgur.com/699YRuw.png" width="400">
 
 - Pacientes Cadastrados 
-<img src="https://i.imgur.com/tIi7phn.png">
+<img src="https://i.imgur.com/tIi7phn.png" width="400">
 
 - Formulário de Cadastro
-<img src="https://i.imgur.com/nyg1b7T.png">
+<div>
+  <img src="https://i.imgur.com/nyg1b7T.png" width="400">
+  <img src="https://imgur.com/BcegwXL.png" width="400">
+</div>
+
+- Cadastro de Convênios e Visualização dos cadastrados 
+<div>
+  <img src="https://imgur.com/RYCdXSz.png" width="400">
+  <img src="https://imgur.com/1r1BbHV.png" width="400">
+</div>
